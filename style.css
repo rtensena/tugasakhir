@@ -1,0 +1,72 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+/* Navbar styling */
+/* Remove default link styling and add hover effect */
+.nav-link {
+    color: #000;
+    font-weight: normal;
+    transition: font-weight 0.3s;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+    color: #007bff;
+    /* Optional: Add a color change on hover */
+}
+
+.active {
+    font-weight: bold;
+}
+
+/* Carousel styling */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-item {
+    height: 32rem;
+    position: relative;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    /* Dark overlay */
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+
+/* Button hover effects */
+.btn-primary:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    color: #666;
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+    margin-top: 50px;
+}
